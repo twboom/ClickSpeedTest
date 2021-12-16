@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Speed Test</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script defer src="js/counter.js"></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <h1>Click Speed Test</h1>
         <details>
             <summary>How it works</summary>
-            Press the <kbd>start</kbd> button to start the test.
+            Press the "Start" button to start the test.
             Then press your spacebar as fast as you can!
         </details>
         <hr>
@@ -27,6 +28,13 @@
         <p><span id="timer">0</span> seconds</p>
         <p><span id="click-counter">0</span> clicks</p>
     </main>
+
+    <div id="modal-container">
+        <div id="modal">
+            <h1>Your results!</h1>
+            <p>You clicked <span id="click-counter-modal">0</span> times in <span id="timer-modal">0</span> seconds.</p>
+        </div>
+    </div>
 
 </body>
 </html>

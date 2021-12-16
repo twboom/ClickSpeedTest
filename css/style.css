@@ -15,6 +15,10 @@ main {
     text-align: center;
 }
 
+summary {
+    cursor: pointer;
+}
+
 button#toggle {
     outline: none;
     border: none;
