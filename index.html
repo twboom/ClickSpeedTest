@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Speed Test</title>
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/counter.js"></script>
 </head>
 <body>
+
+    <script>
+        const config = {};
+        config.time = 10000;
+    </script>
     
     <main>
-        <button id="start"></button>
-        <p id="timer"></p>
-        <p id="click-counter"></p>
+        <button id="toggle">Start</button>
+        <p><span id="timer">0</span> seconds</p>
+        <p><span id="click-counter">0</span> clicks</p>
     </main>
 
 </body>
