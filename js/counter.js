@@ -52,13 +52,15 @@ function start() {
 };
 
 function stop(override) {
+    if (override instanceof Event) { override = true } else { override = false };
     console.log('stop')
     clearTimeout(timeTimeout);
     document.removeEventListener('keydown', handleKeyDown);
     clearInterval(timeInterval);
     if (!override) {
         timer.innerHTML = config.time / 1000;
-        toggle();
+        toggle(false);
+        showResults();
     };
     startButton.innerHTML = 'Reset';
 };
@@ -91,11 +93,13 @@ function showResults() {
     const cps = count / (config.time / 1000);
 
     cpsEl.innerHTML = cps.toFixed(2);
-    
+
+    showModal();
 }
 
 function main() {
     startButton.addEventListener('click', toggle)
+    document.getElementById('modal-container').style.display = 'none';
 };
 
 main()
