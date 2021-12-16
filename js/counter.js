@@ -86,6 +86,14 @@ async function updateTimer() {
     timer.innerHTML = (Date.now() - startTime) / 1000;
 }
 
+function showResults() {
+    const cpsEl = document.getElementById('cps');
+    const cps = count / (config.time / 1000);
+
+    cpsEl.innerHTML = cps.toFixed(2);
+    
+}
+
 function main() {
     startButton.addEventListener('click', toggle)
 };

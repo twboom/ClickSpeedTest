@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
     <script defer src="js/counter.js"></script>
+    <script defer src="js/modal.js"></script>
 </head>
 <body>
 
@@ -32,7 +33,12 @@
     <div id="modal-container">
         <div id="modal">
             <h1>Your results!</h1>
-            <p>You clicked <span id="click-counter-modal">0</span> times in <span id="timer-modal">0</span> seconds.</p>
+            <div id="results">
+                <p id="cps-sentence">You've got a CPS of <span id="cps">0</span>!</p>
+            </div>
+            <div id="close-container">
+                <button id="close">Close</button>
+            </div>
         </div>
     </div>
 

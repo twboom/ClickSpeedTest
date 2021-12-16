@@ -13,13 +13,47 @@ div#modal {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+div#results {
+    width: 80%;
+    margin: auto;
+    font-size: larger;
 }
 
 div#modal > h1 {
     text-align: center;
+}
+
+div#close-container {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div#close-container > button#close {
+    outline: none;
+    border: none;
+    background-color: #00bfff;
+    color: white;
+    font-size: 150%;
+    font-weight: 600;
+    transition: filter 0.2s;
+    cursor: pointer;
+}
+
+div#close-container > button#close:hover {
+    filter: saturate(0.7);
+}
+
+div#close-container > button#close:active {
+    filter: saturate(0.5);
 }
